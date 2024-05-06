@@ -40,3 +40,20 @@ header{
         }
     }
 }
+a:hover{
+    scale: 0.5em;
+}
+.nav-bar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-bar{
+    position: fixed;
+}
+a{
+    text-decoration: none;
+}
