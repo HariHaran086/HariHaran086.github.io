@@ -31,15 +31,14 @@ scroll-behavior: smooth;
 li:hover{
     scale: 1.1;
 }
+ul li:nth-child(4):hover {
+    scale: 1;
+    cursor: default;
+}
 li{
     transition: 0.5s;
 }
-.nav-bar ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-}
+
 a{
     text-decoration: none;
     color: rgb(255, 0, 0)  ;
@@ -55,4 +54,23 @@ a{
 #contact{
     height: 100vh;
     background-color: rgb(63, 43, 43);
+}
+.line-breaker{
+    color: red;
+    font-size: 10px;
+}
+.nav-bottom{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;
+    padding: 10px;
+    padding-left: 16px;
+    position: fixed;
+    bottom: 0;
+    left: 40%;
+    margin-bottom: 25px;
+    background-color: rgb(77, 77, 77);
+    border-radius: 15px;
 }
