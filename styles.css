@@ -1,76 +1,88 @@
-*{
-margin: 0px;
-padding: 0px;
-font-family: 'Montserrat';
-scroll-behavior: smooth;
-}
-.body{
-    align-content: center;
-    background-repeat: no-repeat;
+    *{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+    }
 
-}
-#hero-section{
-    background-image: url(bg.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-.nav-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 8vh;
-    width: 95%;
-    align-items: center;
-    padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    position: fixed;
-    
-}
-li:hover{
-    scale: 1.1;
-}
-ul li:nth-child(4):hover {
-    scale: 1;
-    cursor: default;
-}
-li{
-    transition: 0.5s;
-}
 
-a{
-    text-decoration: none;
-    color: rgb(255, 0, 0)  ;
+:root{
+    --nav-color:#000;
 }
-#about{ 
-    height: 100vh;
-    background-color: antiquewhite;
-}
-#certifications{
-    height: 100vh;
-    background-color: black;
-}
-#contact{
-    height: 100vh;
-    background-color: rgb(63, 43, 43);
-}
-.line-breaker{
-    color: red;
-    font-size: 10px;
-}
-.nav-bottom{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 375px;
-    padding: 10px;
-    padding-left: 16px;
-    position: fixed;
-    bottom: 0;
-    left: 40%;
-    margin-bottom: 25px;
-    background-color: rgb(77, 77, 77);
-    border-radius: 15px;
-}
+    .body{
+        align-content: center;
+        background-repeat: no-repeat;
+
+    }
+    #hero-section{
+        background-image: url(bg.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    .nav-bar{
+        display: flex;
+        height: 80px;
+        align-items: center;
+        padding: 15px;
+        position: fixed;
+        width: 100%;
+        justify-content: center;
+        z-index: 10;
+    }
+    li:hover{
+        scale: 1.1;
+    }
+    ul li:nth-child(4):hover {
+        scale: 1;
+        cursor: default;
+    }
+    li{
+        transition: 0.5s;
+    }
+
+    a{
+        text-decoration: none;
+        color: rgb(255, 0, 0)  ;
+    }
+    #about{ 
+        height: 100vh;
+        background-color: antiquewhite;
+    }
+    #certifications{
+        height: 100vh;
+        background-color: black;
+        position: relative;
+    }
+    .lottie-certifications{
+        position:absolute;
+        bottom: 0;
+        left: 20%;
+    }
+    #contact{
+        height: 100vh;
+        background-color: rgb(63, 43, 43);
+    }
+    .line-breaker{
+        color: red;
+        font-size: 10px;
+    }
+    .nav-bottom{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 375px;
+        padding: 10px;
+        padding-left: 16px;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 25px;
+        border-radius: 15px;
+        background-color: rgba(74, 73, 73, 0.4);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        z-index: 1;
+    }
